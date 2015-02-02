@@ -1,0 +1,29 @@
+/*Default Constants */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.clear-both {
+  clear: both;
+}
+.bgPrimary {
+  background-color: #ffffff;
+}
+.bgSecondary {
+  background-color: #ffff00;
+}
+/*Site Specific constants*/
+/*Main block css */
+/*All non classified css */
+/*If mobile first start with xs, if desktop first start with xl */
