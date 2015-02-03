@@ -24,12 +24,20 @@
 
 @import "constants/layout/layout.less";
 
-/*If mobile first start with xs, if desktop first start with xl
-  Remove xl if desktop first and xs if mobile first */
+/*desktop or mobile first media queries - comment out as needed.*/
 
-@import "responsive/xl/main-xl.less";
-@import "responsive/lg/main-lg.less";
-@import "responsive/md/main-md.less";
-@import "responsive/sm/main-sm.less";
-@import "responsive/xs/main-xs.less";
+/*Desktop First */
+
+@import "desktop-first-responsive/lg/main-lg.less";
+@import "desktop-first-responsive/md/main-md.less";
+@import "desktop-first-responsive/sm/main-sm.less";
+@import "desktop-first-responsive/xs/main-xs.less";
+
+/*Mobile First */
+
+@import "mobile-first-responsive/sm/main-sm.less";
+@import "mobile-first-responsive/md/main-md.less";
+@import "mobile-first-responsive/lg/main-lg.less";
+@import "mobile-first-responsive/xl/main-xl.less";
+
 

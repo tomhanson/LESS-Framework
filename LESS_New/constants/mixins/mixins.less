@@ -139,6 +139,7 @@
   @pxValue: (@sizeValue);
   font-size: ~"@{pxValue}px";
   font-size: ~"@{remValue}rem";
+  line-height: 1.2;
 }
 /*Padding and Margin for REM with PX fallback */
 .padding(@one, @two, @three, @four) {
@@ -286,4 +287,9 @@
 
   @{type}: ~"@{pxValue}px";
   @{type}: ~"@{remValue}rem";
+}
+.background-rgba(@r, @g, @b, @a) {
+    background-color: rgb(@r, @g, @b);
+    background-color: rgba(@r, @g, @b, @a);
+
 }

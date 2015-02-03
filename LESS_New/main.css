@@ -4,6 +4,10 @@
 /*Margins*/
 /*General property setting*/
 /*Default Constants */
+/*Media Query Break Points*/
+/*Mobile First*/
+/*Desktop First*/
+/*Colors*/
 html {
   font-family: "Helvetica Neue", Arial, Helvetica;
   font-size: 62.5%;
@@ -11,32 +15,40 @@ html {
 p {
   font-size: 14px;
   font-size: 1.4rem;
+  line-height: 1.2;
 }
 h1 {
   font-size: 24px;
   font-size: 2.4rem;
+  line-height: 1.2;
 }
 h2 {
   font-size: 22px;
   font-size: 2.2rem;
+  line-height: 1.2;
 }
 h3 {
   font-size: 20px;
   font-size: 2rem;
+  line-height: 1.2;
 }
 h4 {
   font-size: 18px;
   font-size: 1.8rem;
+  line-height: 1.2;
 }
 h5 {
   font-size: 16px;
   font-size: 1.6rem;
+  line-height: 1.2;
   left: 20px;
   left: 2rem;
   top: 15px;
   top: 1.5rem;
-  padding: 12px 16px 13px 26.5px;
-  padding: 1.2rem 1.6rem 1.3rem 2.65rem;
+  padding: 12px 16px 13px 2px;
+  padding: 1.2rem 1.6rem 1.3rem 0.2rem;
+  background-color: #880c44;
+  background-color: rgba(136, 12, 68, 0.8);
 }
 /*Default Button styles*/
 .btn {
@@ -108,5 +120,6 @@ h5 {
 }
 /*Main block css */
 /*All non classified css */
-/*If mobile first start with xs, if desktop first start with xl
-  Remove xl if desktop first and xs if mobile first */
+/*desktop or mobile first media queries - comment out as needed.*/
+/*Desktop First */
+/*Mobile First */
