@@ -140,3 +140,150 @@
   font-size: ~"@{pxValue}px";
   font-size: ~"@{remValue}rem";
 }
+/*Padding and Margin for REM with PX fallback */
+.padding(@one, @two, @three, @four) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+  @remTwo: @two / 10;
+  @pxTwo: (@two);
+  @remThree: @three / 10;
+  @pxThree: (@three);
+  @remFour: @four / 10;
+  @pxFour: (@four);
+
+  padding: ~"@{pxOne}px" ~"@{pxTwo}px" ~"@{pxThree}px" ~"@{pxFour}px";
+  padding: ~"@{remOne}rem" ~"@{remTwo}rem" ~"@{remThree}rem" ~"@{remFour}rem";
+}
+.padding(@one, @two, @three) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+  @remTwo: @two / 10;
+  @pxTwo: (@two);
+  @remThree: @three / 10;
+  @pxThree: (@three);
+
+  padding: ~"@{pxOne}px" ~"@{pxTwo}px" ~"@{pxThree}px";
+  padding: ~"@{remOne}rem" ~"@{remTwo}rem" ~"@{remThree}rem";
+}
+.padding(@one, @two) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+  @remTwo: @two / 10;
+  @pxTwo: (@two);
+
+  padding: ~"@{pxOne}px" ~"@{pxTwo}px";
+  padding: ~"@{remOne}rem" ~"@{remTwo}rem";
+}
+.padding(@one) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+
+  padding: ~"@{pxOne}px";
+  padding: ~"@{remOne}rem";
+}
+.padding-top(@one) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+
+  padding-top: ~"@{pxOne}px";
+  padding-top: ~"@{remOne}rem";
+}
+.padding-right(@one) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+
+  padding-right: ~"@{pxOne}px";
+  padding-right: ~"@{remOne}rem";
+}
+.padding-bottom(@one) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+
+  padding-bottom: ~"@{pxOne}px";
+  padding-bottom: ~"@{remOne}rem";
+}
+.padding-left(@one) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+
+  padding-left: ~"@{pxOne}px";
+  padding-left: ~"@{remOne}rem";
+}
+/*Margins*/
+
+.margin(@one, @two, @three, @four) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+  @remTwo: @two / 10;
+  @pxTwo: (@two);
+  @remThree: @three / 10;
+  @pxThree: (@three);
+  @remFour: @four / 10;
+  @pxFour: (@four);
+
+  margin: ~"@{pxOne}px" ~"@{pxTwo}px" ~"@{pxThree}px" ~"@{pxFour}px";
+  margin: ~"@{remOne}rem" ~"@{remTwo}rem" ~"@{remThree}rem" ~"@{remFour}rem";
+}
+.margin(@one, @two, @three) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+  @remTwo: @two / 10;
+  @pxTwo: (@two);
+  @remThree: @three / 10;
+  @pxThree: (@three);
+
+  margin: ~"@{pxOne}px" ~"@{pxTwo}px" ~"@{pxThree}px";
+  margin: ~"@{remOne}rem" ~"@{remTwo}rem" ~"@{remThree}rem";
+}
+.margin(@one, @two) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+  @remTwo: @two / 10;
+  @pxTwo: (@two);
+
+  padding: ~"@{pxOne}px" ~"@{pxTwo}px";
+  padding: ~"@{remOne}rem" ~"@{remTwo}rem";
+}
+.margin(@one) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+
+  margin: ~"@{pxOne}px";
+  margin: ~"@{remOne}rem";
+}
+.margin-top(@one) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+
+  margin-top: ~"@{pxOne}px";
+  margin-top: ~"@{remOne}rem";
+}
+.margin-right(@one) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+
+  margin-right: ~"@{pxOne}px";
+  margin-right: ~"@{remOne}rem";
+}
+.margin-bottom(@one) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+
+  margin-bottom: ~"@{pxOne}px";
+  margin-bottom: ~"@{remOne}rem";
+}
+.margin-left(@one) {
+  @remOne: @one / 10;
+  @pxOne: (@one);
+
+  margin-left: ~"@{pxOne}px";
+  margin-left: ~"@{remOne}rem";
+}
+/*General property setting*/
+.rem-property(@type, @sizeValue) {
+  @remValue: @sizeValue / 10;
+  @pxValue: (@sizeValue);
+
+  @{type}: ~"@{pxValue}px";
+  @{type}: ~"@{remValue}rem";
+}
