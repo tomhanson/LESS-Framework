@@ -41,14 +41,6 @@ h5 {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.2;
-  left: 20px;
-  left: 2rem;
-  top: 15px;
-  top: 1.5rem;
-  padding: 12px 16px 13px 2px;
-  padding: 1.2rem 1.6rem 1.3rem 0.2rem;
-  background-color: #880c44;
-  background-color: rgba(136, 12, 68, 0.8);
 }
 /*Default Button styles*/
 .btn {

@@ -1,6 +1,11 @@
 # LESS-Framework
 My custom LESS framework
 
+# Setup
+
+Start by removing the import for the variation you are not using(desktop or mobile). Remove the folder as well if you don't want to risk being confused at all.
+When setting the media queries in variables.less remove the media queries you will not be using.
+
 form examples
 
 <form class="form-horizontal">
