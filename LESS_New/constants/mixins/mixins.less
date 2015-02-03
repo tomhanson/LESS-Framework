@@ -131,3 +131,12 @@
 	-ms-transform-origin:     @x @y;
 	-o-transform-origin:      @x @y;
 }
+
+/*REM Font fallback */
+
+.font-size(@sizeValue) {
+  @remValue: @sizeValue / 10;
+  @pxValue: (@sizeValue);
+  font-size: ~"@{pxValue}px";
+  font-size: ~"@{remValue}rem";
+}
