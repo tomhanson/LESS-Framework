@@ -19,6 +19,7 @@ h4 {
 }
 h5 {
   .font-size(@font-size + 2);
+  .padding-left(6);
 }
 
 /*Default Button styles*/
@@ -31,10 +32,13 @@ h5 {
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0);
+  background-color: @btn-main-color;
+  border: @btn-main-border;
+  color: @btn-main-text;
   &:hover {
-    color: #333;
-    background-color: #E6E6E6;
-    border-color: #ADADAD;
+    background-color: @btn-main-color-hover;
+    border-color: @btn-main-border-hover;
+    color: @btn-main-text-hover
   }
 }
 
@@ -45,7 +49,6 @@ h5 {
     display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
-    font-weight: 700;
   }
 }
 
@@ -69,3 +72,66 @@ h5 {
     color: #555;
   }
 }
+/*Checkbox styling*/
+.checkbox {
+  display: none;
+  + label {
+    background-color: #E9ECEE;
+    border: 1px solid #ADB8C0;
+    color: #99A1A7;
+    padding: 18px;
+    display: inline-block;
+    position: relative;
+  }
+  &:checked {
+    + label {
+      &:after {
+        content: '\2714';
+        font-size: 14px;
+        position: absolute;
+        top: 0px;
+        left: 3px;
+        color: #99A1A7;
+      }
+    }
+  }
+}
+.radio {
+  display: none;
+  + label {
+    -webkit-appearance: none;
+    background-color: #FAFAFA;
+    border: 1px solid #CACECE;
+    padding:6px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+  }
+  &:checked {
+    + label {
+      &:after {
+        content: ' ';
+        width: 8px;
+        height: 8px;
+        border-radius: 50px;
+        position: absolute;
+        top: 2px;
+        background: #99A1A7;
+        left: 2px;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+/* ***Usage ***
+
+<input type="checkbox" id="checkbox-1" class="checkbox">
+<label for="checkbox-1"></label>
+
+<input type="radio" id="radio-1" class="radio">
+<label for="radio-1"></label>
+<input type="radio" id="radio-3" class="radio">
+<label for="radio-3"></label>
+
+*/
