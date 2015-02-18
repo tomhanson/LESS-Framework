@@ -1,5 +1,5 @@
 html {
-  font-family: "Helvetica Neue", Arial, Helvetica;
+  font-family: @font-primary;
   font-size: 62.5%;
 }
 p {
@@ -32,13 +32,13 @@ h5 {
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0);
-  background-color: @btn-main-color;
+  background-color: @btn-main-bg;
   border: @btn-main-border;
-  color: @btn-main-text;
+  color: @btn-main-color;
   &:hover {
-    background-color: @btn-main-color-hover;
+    background-color: @btn-main-bg-hover;
     border-color: @btn-main-border-hover;
-    color: @btn-main-text-hover
+    color: @btn-main-color-hover
   }
 }
 
